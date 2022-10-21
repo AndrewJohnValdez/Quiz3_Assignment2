@@ -14,24 +14,36 @@ Total cost overall
 
 /*
 #include <stdio.h>
-#include <conio.h>
+#include <string.h>
+#include "mealPrice.h"
 */
 
 /*
-void main() {
+int main(int argc, char *argv[]) {
 
 //Print list 
 //Print the list of costs for salad, soup, sandwich, and pizza, listing them as choices to be ordered for the receipt
 //possibly make a main menu for the options
 
+//Display results such as meal cost, tax, tip, and total bill
+
+
+
 //Possible randomizer for choosing the type of food wanted, 1 out of the 4
+
 
 
 //Method to calculate the tax 
 
 
+
 //Method to calculate the tip by three choices that are displayed and based on user input
 
 
+
+//Method to calculate the total cost of all variables that were supplied such as tax, tip, and meal cost
+
+
+    return EXIT_SUCCESS;
 }
 */
