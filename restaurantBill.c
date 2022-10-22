@@ -27,8 +27,6 @@ extern const int MealTableEntries;
 
 extern Meal MealTable[];
 
-PtrToMeal matchPtr;
-
 char *ptrTax;
 char *ptrTip;
 
@@ -60,11 +58,18 @@ tip = mealCost * (tipValue / 100.0);
 //Method to calculate the total cost of all variables that were supplied such as tax, tip, and meal cost
 totalCost = mealCost + tax + tip;
 
-//Display results such as meal cost, tax, tip, and total bill
-printf("tax test: $%.2f\n", tax);
-printf("tip Test: $%.2f\n", tip);
-printf("mealCost Test: $%.2f\n", MealTable[randnum].price);
-printf("total cost test: $%.2f\n", totalCost);
+//Display results such as meal cost, tax, tip, and total 
+printf("////////////////////////\n");
+
+printf("Meal Cost: $%.2f\n", mealCost);
+
+printf("Tax Amount: $%.2f\n", tax);
+
+printf("Tip Amount: $%.2f\n", tip);
+
+printf("Total Cost: $%.2f\n", totalCost);
+
+printf("////////////////////////\n");
 
 return EXIT_SUCCESS;
 }
