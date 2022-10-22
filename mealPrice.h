@@ -3,7 +3,7 @@
 
 typedef struct {
 
-    float price;
+    double price;
 
     char *name;
 
