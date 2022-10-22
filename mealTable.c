@@ -2,12 +2,17 @@
 #include <stdlib.h>
 #include "mealPrice.h"
 
-mealPrice mealTable[] =
+Meal MealTable[] =
 {
-    {"Salad", 9.95}, 
-    {"Soup", 4.55},
-    {"Sandwich", 13.25},
-    {"Pizza", 22.35}
+    {9.95, "Salad"}, 
+
+    {4.55, "Soup"},
+
+    {13.25, "Sandwich"},
+    
+    {22.35, "Pizza"}
 };
 
-const int mealTableEntries = sizeof(mealTable)/sizeof(mealTable[0]);
+const int MealTableEntries = sizeof(MealTable) / sizeof(MealTable[0]);
+
+

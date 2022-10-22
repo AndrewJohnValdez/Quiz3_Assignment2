@@ -3,10 +3,10 @@
 
 typedef struct {
 
-    double price;
+    float price;
 
     char *name;
 
-} meal, *PtrToMeal;
+} Meal, *PtrToMeal;
 
-typedef const meal *PtrToConstMeal;
+typedef const Meal *PtrToConstMeal;
