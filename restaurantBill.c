@@ -1,25 +1,8 @@
-//restaurantBill.c
-/*
-Program Requirements:
-Values are to be passed as arguments (argc & argv)
-Compute tax and tip on restaurant bill
-    tax and tip are both percentages as command line arguments
-        California Tax = 9.75%
-        Tip: 5%, 10%, 15%
-ask for patron name?
-Meal cost added up
-Total cost overall
-
-*/
-
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "mealPrice.h"
-
-
-long randomize();
 
 int main(int argc, char *argv[]) {
 
@@ -47,6 +30,8 @@ tipValue = strtod(argv[2], &ptrTip);
 
 //Randomizer for choosing the type of food wanted, 1 out of the 4
 randnum = rand() % MealTableEntries;
+
+//Get price of randomly chosen meal
 mealCost = MealTable[randnum].price;
 
 //Method to calculate the tax 
@@ -61,13 +46,17 @@ totalCost = mealCost + tax + tip;
 //Display results such as meal cost, tax, tip, and total 
 printf("////////////////////////\n");
 
-printf("Meal Cost: $%.2f\n", mealCost);
+printf("Tax is: %.f%%\n", taxValue);
 
-printf("Tax Amount: $%.2f\n", tax);
+printf("tip is: %.f%%\n", tipValue);
 
-printf("Tip Amount: $%.2f\n", tip);
+printf("Meal Cost: %.2f\n", mealCost);
 
-printf("Total Cost: $%.2f\n", totalCost);
+printf("Tax Amount: %.2f\n", tax);
+
+printf("Tip Amount: %.2f\n", tip);
+
+printf("Total Cost: %.2f\n", totalCost);
 
 printf("////////////////////////\n");
 
