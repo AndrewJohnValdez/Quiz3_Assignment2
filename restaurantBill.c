@@ -46,9 +46,9 @@ totalCost = mealCost + tax + tip;
 //Display results such as meal cost, tax, tip, and total 
 printf("////////////////////////\n");
 
-printf("Tax is: %.f%%\n", taxValue);
+printf("Tax is: %.2f%%\n", taxValue);
 
-printf("tip is: %.f%%\n", tipValue);
+printf("tip is: %.2f%%\n", tipValue);
 
 printf("Meal Cost: %.2f\n", mealCost);
 
